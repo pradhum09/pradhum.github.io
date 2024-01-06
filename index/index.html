@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Food Website</title>
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*####### html element styling   #######*/
+
+
+html{
+    font-size: 14px;
+
+}
+
+
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#h11{
+    display: inline;
+}
+
+ul li{
+    list-style: none;
+}
+#{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5mm;
+    letter-spacing: 0.15mm;
+}
+h1,h2,h3{
+    margin-bottom: 0.5mm;
+    letter-spacing: 0.15mm;
+    font: weight 500px;
+}
+/*####utility class#############*/
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color:#e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333;
+ }
+ .text-grey{
+    color: #555;
+ }
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10em;
+}
+
+
+
+
+
+
+
+
+
+/* ##### header styling #####*/
+
+.header{
+position: relative;
+height: 120vh;
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../img/Screenshot\ 2023-12-11\ 185334.png');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.navbar{
+   /* border: 1px solid white;*/
+    padding: 1rem;
+}
+
+/*.header.logo,
+.header .navbar a{
+    color: white;
+}*/
+.header{
+    color: white;
+}
+
+.header .navbar .logo{
+    float: left;
+    font-size:20px;
+}
+
+.header.navbar.nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.header.navbar.nav-items
+{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+    .navbar a:hover{
+        border-bottom: 1px solid #fff;
+
+    }
+
+
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear:both ;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.header.navbar.nav-items
+{
+    float: right;
+}
+
+
+
+
+/*######## Header content styling#######*/
+.header-content{
+    position: absolute;
+    text-align: center;
+    /*border: 2px solid white;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+
+
+
+}
+
+
+
+.header-content h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header-content p{
+    text-transform: uppercase;
+
+}
+
+    </style>
+</head>
+
+<body style="background-image: url(background.webp);">
+    <header   class="header">   
+    <nav class="navbar">
+        <div class="Conatiner">
+             
+    <ul class="nav-items">
+        <h1 class="logo nav-items lg-heading text-light  " id="h11"><img src="p3.png" alt="" style="border-radius: 80px; height: 95px;"> food-cort</h1>
+        <h1 style="text-align: right;">
+        <li class="nav-items"><a href="./index.html">Home</a></li>
+        <li class="nav-items"><a href="./about.html">About</a></li>
+        <li class="nav-items"><a href="./contact.html">Contact</a></li>
+    </h1>
+    </ul>   
+        </div>
+    
+    </nav>
+
+
+
+    <div class="header-content">
+        <h4 class="lg-heading text-light">Eat well,Live well</h4>
+        <p class="text-light">Made with love and a sprinkle of cuteness.</p>
+        <a href="#" class="btn btn-primary text-red md-heading">Explore Food</a>
+   </div>
+    </header>
+</body>
+</html>
